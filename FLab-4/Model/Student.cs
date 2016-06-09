@@ -7,25 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FLab_4.Models
+namespace FLab_4.Model
 {
     using System;
     using System.Collections.Generic;
-
-    public partial class Course
+    
+    public partial class Student
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Course()
+        public Student()
         {
             this.Enrollments = new HashSet<Enrollment>();
         }
-
-        public int CourseID { get; set; }
-        public string Title { get; set; }
-        public int Credits { get; set; }
-        public int DepartmentID { get; set; }
-
-        public virtual Department Department { get; set; }
+    
+        public int StudentID { get; set; }
+        public string LastName { get; set; }
+        public string FirstMidName { get; set; }
+        public System.DateTime EnrollmentDate { get; set; }
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }

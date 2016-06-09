@@ -7,24 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FLab_4.Models
+namespace FLab_4.Model
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
-    public partial class DefaultConnection : DbContext
+    
+    public partial class DefaultConnection1 : DbContext
     {
-        public DefaultConnection()
-            : base("name=DefaultConnection")
+        public DefaultConnection1()
+            : base("name=DefaultConnection1")
         {
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-
+    
         public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Enrollment> Enrollments { get; set; }

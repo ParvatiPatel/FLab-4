@@ -82,25 +82,25 @@
   <ItemGroup>
     <Content Include="Courses.aspx" />
     <Content Include="Departments.aspx" />
-    <Content Include="Models\ContosoModel.Context.tt">
+    <Content Include="Model\contoscoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContosoModel.edmx</DependentUpon>
-      <LastGenOutput>ContosoModel.Context.cs</LastGenOutput>
+      <DependentUpon>contoscoModel.edmx</DependentUpon>
+      <LastGenOutput>contoscoModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ContosoModel.tt">
+    <Content Include="Model\contoscoModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContosoModel.edmx</DependentUpon>
-      <LastGenOutput>ContosoModel.cs</LastGenOutput>
+      <DependentUpon>contoscoModel.edmx</DependentUpon>
+      <LastGenOutput>contoscoModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
-    <EntityDeploy Include="Models\ContosoModel.edmx">
+    <EntityDeploy Include="Model\contoscoModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ContosoModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>contoscoModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ContosoModel.edmx.diagram">
-      <DependentUpon>ContosoModel.edmx</DependentUpon>
+    <Content Include="Model\contoscoModel.edmx.diagram">
+      <DependentUpon>contoscoModel.edmx</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -175,32 +175,32 @@
     <Compile Include="Departments.aspx.designer.cs">
       <DependentUpon>Departments.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContosoModel.Context.cs">
+    <Compile Include="Model\contoscoModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContosoModel.Context.tt</DependentUpon>
+      <DependentUpon>contoscoModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContosoModel.cs">
+    <Compile Include="Model\contoscoModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContosoModel.tt</DependentUpon>
+      <DependentUpon>contoscoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContosoModel.Designer.cs">
+    <Compile Include="Model\contoscoModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContosoModel.edmx</DependentUpon>
+      <DependentUpon>contoscoModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Course.cs">
-      <DependentUpon>ContosoModel.tt</DependentUpon>
+    <Compile Include="Model\Course.cs">
+      <DependentUpon>contoscoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Department.cs">
-      <DependentUpon>ContosoModel.tt</DependentUpon>
+    <Compile Include="Model\Department.cs">
+      <DependentUpon>contoscoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Enrollment.cs">
-      <DependentUpon>ContosoModel.tt</DependentUpon>
+    <Compile Include="Model\Enrollment.cs">
+      <DependentUpon>contoscoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Student.cs">
-      <DependentUpon>ContosoModel.tt</DependentUpon>
+    <Compile Include="Model\Student.cs">
+      <DependentUpon>contoscoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="StudentDetails.aspx.cs">
       <DependentUpon>StudentDetails.aspx</DependentUpon>

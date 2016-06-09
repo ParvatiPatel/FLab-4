@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 // using statements required for EF DB access
-using FLab_4.Models;
+using FLab_4.Model;
 using System.Web.ModelBinding;
 
 namespace FLab_4
@@ -28,7 +28,7 @@ namespace FLab_4
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnection1 db = new DefaultConnection1())
             {
                 // use the Student model to create a new student object and
                 // save a new record

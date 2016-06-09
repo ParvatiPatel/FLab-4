@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 // using statements that are required to connect to EF DB
-using FLab_4.Models;
+using FLab_4.Model;
 using System.Web.ModelBinding;
 
 namespace FLab_4
@@ -34,7 +34,7 @@ namespace FLab_4
         protected void GetStudents()
         {
             // connect to EF
-            using (DefaultConnection db = new DefaultConnection())
+            using (DefaultConnection1 db = new DefaultConnection1())
             {
                 // query the Students Table using EF and LINQ
                 var Students = (from allStudents in db.Students
